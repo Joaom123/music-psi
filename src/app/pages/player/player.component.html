@@ -30,10 +30,33 @@
   <mat-drawer-content>
     <div class="container">
       <div class="content">
+        <section>
+          <h3>Seus Grupos</h3>
 
+          <div class="groups">
+            <mat-card class="groups__group">
+              <img mat-card-image src="../../../assets/pf.png">
+              <mat-card-content>
+                <p>Amigos do trabalho</p>
+              </mat-card-content>
+            </mat-card>
+            <mat-card class="groups__group">
+              <img mat-card-image src="../../../assets/rs.png">
+              <mat-card-content>
+                <p>Amigos da empresa</p>
+              </mat-card-content>
+            </mat-card>
+            <mat-card class="groups__group">
+              <img mat-card-image src="../../../assets/vm.png">
+              <mat-card-content>
+                <p>Outros amigos</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
 
+        </section>
         <mat-list color="#303E65">
-          <h3 mat-subheader>Músicas</h3>
+          <h3>Músicas</h3>
           <mat-list-item (click)="openFile(file, i)" *ngFor="let file of files; let i = index">
             <mat-icon color="primary" mat-list-icon>music_note</mat-icon>
             <h4 mat-line>{{ file.name }}</h4>

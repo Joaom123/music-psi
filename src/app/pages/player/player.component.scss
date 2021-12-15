@@ -9,13 +9,13 @@
         cursor: pointer;
       }
     }
-  
+
     .content {
       .logo {
         margin: 2.5rem;
         text-align: center;
         font-size:24px;
-        color: #3f51b5;
+        color: #303E65;
         .mat-icon{
           height:160px !important;
           width:160px !important;
@@ -23,11 +23,24 @@
         }
       }
     }
-  
+
     .media-footer {
       position: absolute;
       bottom:0;
       width:100%;
+
+      mat-toolbar {
+        background: #303E65;
+      }
+
+      mat-toolbar-row {
+        color: aliceblue;
+      }
+
+      mat-icon {
+        color: aliceblue;
+      }
+
       .time-slider {
         width: 100% !important;
         margin-left:20px;
@@ -45,3 +58,14 @@
       }
     }
   }
+
+.side__element {
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  color: #303E65;
+
+  mat-icon {
+    margin-right: 0.5em;
+  }
+}
